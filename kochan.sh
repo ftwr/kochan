@@ -17,8 +17,6 @@
 #                        `----'                `--`---'
 ############################################################
 
-1
-
 lastlog=`ls -t /var/log/nginx.log*  | grep -v gz | head -n1`
 
 cat $lastlog | awk {'print $3'}|sort|uniq >> /tmp/reestr.txt
